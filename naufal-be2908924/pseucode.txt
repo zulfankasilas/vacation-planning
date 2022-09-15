@@ -1,0 +1,5 @@
+READ AND WRITE "search_destination" with array(string)
+READ AND WRITE "destiation" with string
+
+STORE "search_destination" with ["jakarta", "bangkok", "local shirine", "market"]
+STORE "destiation" with string
