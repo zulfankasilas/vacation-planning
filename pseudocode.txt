@@ -1,0 +1,10 @@
+READ and WRITE "destination" with string
+READ and WRITE "schedule" with array
+READ and WRITE "cruises_offer" with string
+STORE "destination" with "Bangkok"
+STORE "schedule" with "['first day : by plane to bangkok', 'second day: travel to the market', 'third day free time or visit local shrine', 'fourth day return to jakarta']"
+STORE "cruises_offer" with "stay"
+IF "cruises_offer" equal to "stay"
+  PRINT "Stay in ship"
+ELSE
+  PRINT "Debark to the nearest town"
