@@ -1,0 +1,16 @@
+STORE destination_list with ['Bangkok', 'Beijing', 'Singapore', 'Kuala Lumpur']
+READ and WRITE destination with 'Bangkok'
+READ and WRITE travel_duration with 4
+
+STORE plane_price with 4000000
+STORE ship_price with 3500000
+
+IF transportation = 'ship':
+    DO book_ship_ticket
+    IF stay_or_debark = 'stay':
+        DO wait_until_ship_reach_destination
+    ELSE:
+        DO find_nearest_city
+        DO find_other_transport_to_city
+ELSE:
+    DO book_plane_ticket
