@@ -1,0 +1,6 @@
+STORE destination_list with ["Bangkok", "market", "local shrine", "Jakarta"]
+
+READ AND WRITE first_dest with "Bangkok"
+READ AND WRITE first_dest with "market"
+READ AND WRITE first_dest with "local shrine"
+READ AND WRITE first_dest with "Jakarta"
