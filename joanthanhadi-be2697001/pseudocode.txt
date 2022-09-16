@@ -1,0 +1,13 @@
+STORE "destination" WITH "Bangkok"
+STORE "budget" WITH 20000000
+STORE "duration" WITH 7
+
+IF method_of_transportation IS "cruise"
+    DO book_cruise_ticket
+    IF "stay" IS True
+        DO wait_until_destination
+    ELSE
+        DO find_nearest_city
+        DO find_another_method_of_transportation_to_destination
+ELSE   
+    DO book_plane_ticket
