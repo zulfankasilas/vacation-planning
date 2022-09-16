@@ -1,0 +1,34 @@
+READ AND WRITE destination with string "Bangkok"
+READ AND WRITE itinerary_A with array ['First day: by plane to Bangkok', 'Second day: travel to the market', 'Third day: free time or visit local shrine', 'Fourth day: return to Jakarta']
+READ AND WRITE schedule with itinerary_A
+READ AND WRITE isDebark with boolean true
+READ AND WRITE price with number 0
+
+IF destination equal "Bangkok"
+
+    IF schedule equal itinerary_A
+        STORE price with price + 5000000
+
+        IF isDebark
+            STORE price with price + 800000
+        
+        PRINT price 
+
+
+== NOTASI ALGORITMIK ======
+destination ← "Bangkok"
+itinerary_A ← ['First day: by plane to Bangkok', 'Second day: travel to the market', 'Third day: free time or visit local shrine', 'Fourth day: return to Jakarta']
+schedule ← itinerary_A
+isDebark ← true
+
+price ← 0
+
+IF destination = "Bangkok" THEN
+
+    IF schedule = itinerary_A THEN
+        price ← price + 5000000
+
+        IF isDebark THEN
+            price ← price + 800000
+            
+        → price
