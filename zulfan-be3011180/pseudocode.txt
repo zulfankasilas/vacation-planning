@@ -1,0 +1,18 @@
+SET "price" with 0
+
+READ AND WRITE "destination" with "BANGKOK"
+ADD "price" with 2500000
+
+READ AND WRITE "total_day" with 3
+ADD "price" with 500000 multiply by "total_day"
+
+SET day_n with 1
+DO
+   READ AND WRITE "day_n_activity[day_n]" with "FLY TO BANGKOK" , "VISIT MARKET" , "VISIT LOCAL SHRINE" , "BACK TO JAKARTA"
+   ADD day_n with 1
+WHILE "day_n" LESS OR EQUAL THAN "total_day"
+
+PRINT "destination"
+PRINT "total_day"
+PRINT ALL "day_n_activity"
+PRINT "price"
